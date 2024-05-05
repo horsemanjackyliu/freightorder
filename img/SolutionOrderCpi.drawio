@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2024-03-22T09:07:11.837Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="lNrcGWqOAv7DKzhNMSjO" version="24.0.7" type="device">
+  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+    <mxGraphModel dx="1434" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="S/4 Hana Cloud" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="2.5" y="193" width="230" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="2" source="5" target="NfClrUy2gsmrffv5LE0U-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="ellipse;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="2" vertex="1">
+          <mxGeometry x="94" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-44" value="Solution Order Item created" style="shape=note;whiteSpace=wrap;size=17" parent="2" vertex="1">
+          <mxGeometry x="58.5" y="162" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-32" value="CDS View API" style="shape=note;whiteSpace=wrap;size=17" parent="2" vertex="1">
+          <mxGeometry x="58.5" y="257" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="BTP Event Mesh" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="231" y="193" width="233.5" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-41" value="Event Q" style="whiteSpace=wrap;strokeColor=#004C99;" parent="3" vertex="1">
+          <mxGeometry x="72.5" y="162" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="BTP Integration Suite" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="464.5" y="193" width="256.5" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#004C99;strokeColor=#0066CC;" parent="4" source="NfClrUy2gsmrffv5LE0U-51" target="NfClrUy2gsmrffv5LE0U-55" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="212" />
+              <mxPoint x="130" y="212" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-51" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="4" vertex="1">
+          <mxGeometry x="80" y="72" width="100" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="d-zsmwrzLAqvNFmxYj9l-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="4" source="NfClrUy2gsmrffv5LE0U-55" target="NfClrUy2gsmrffv5LE0U-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-55" value="Get Service Org/CC/PC" style="whiteSpace=wrap;" parent="4" vertex="1">
+          <mxGeometry x="75" y="217" width="110" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-68" value="Update Solution Order Item Org/CC/PC" style="whiteSpace=wrap;" parent="4" vertex="1">
+          <mxGeometry x="74.25" y="345" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-105" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#0066CC;" parent="4" source="NfClrUy2gsmrffv5LE0U-68" target="NfClrUy2gsmrffv5LE0U-64" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="365.5" y="402" as="sourcePoint" />
+            <mxPoint x="130" y="359" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-64" value="" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#ff0000" parent="4" vertex="1">
+          <mxGeometry x="115" y="532" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#004C99;" parent="1" source="NfClrUy2gsmrffv5LE0U-41" target="NfClrUy2gsmrffv5LE0U-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-54" value="AMQP Adapter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NfClrUy2gsmrffv5LE0U-53" vertex="1" connectable="0">
+          <mxGeometry x="-0.0226" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NfClrUy2gsmrffv5LE0U-111" value="&lt;span style=&quot;font-size: 28px;&quot;&gt;&lt;b&gt;S/4HANA Solution Order Item Auto Update Solution Proposal&lt;/b&gt;&lt;/span&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="158" y="50" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PSgegNYdTMhYBpR-mWZZ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=100;exitDy=33.5;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="NfClrUy2gsmrffv5LE0U-44" target="NfClrUy2gsmrffv5LE0U-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="166" y="380" />
+            </Array>
+            <mxPoint x="168.5" y="580.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PSgegNYdTMhYBpR-mWZZ-33" value="&amp;nbsp;Event" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PSgegNYdTMhYBpR-mWZZ-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.0129" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=100;entryDy=33.5;entryPerimeter=0;dashed=1;" parent="1" source="NfClrUy2gsmrffv5LE0U-55" target="hyrqPwg63C9ezpS6CWDY-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-34" value="API Call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hyrqPwg63C9ezpS6CWDY-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.012" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-39" value="Solution Order Item" style="shape=note;whiteSpace=wrap;size=17" parent="1" vertex="1">
+          <mxGeometry x="66" y="545" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="NfClrUy2gsmrffv5LE0U-68" target="hyrqPwg63C9ezpS6CWDY-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyrqPwg63C9ezpS6CWDY-41" value="Api Call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hyrqPwg63C9ezpS6CWDY-40" vertex="1" connectable="0">
+          <mxGeometry x="0.01" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
