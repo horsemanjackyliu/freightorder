@@ -36,7 +36,7 @@ click Next.
 ![Alt text](img/image-10.png)
 ![Alt text](img/image-11.png)
 
-### Create Communication Scenario for Event Consumption Model
+### Step 2 Create Communication Scenario for Event Consumption Model
 In this section you will create a communication scenario for the previously generated Event Consumption Model and you will get explanation of additional steps needed to use it later for the event consumption. Eventually, this communication scenario is used in the productive system to create a communication arrangement with the previously generated Event Consumption Model. Moreover, a sap_com_0092 communication arrangement will be required in the productive system which denotes the connection from the productive system to the event mesh instance in the SAP BTP ABAP environment system. These two scenarios combined will then enable the event consumption with the generated Event Consumption Model.
 
 Right-click your package and choose New > Other ABAP Repository Object > Cloud Communication Management > Communication Scenario and click Next.
@@ -56,7 +56,7 @@ and click Next.
 Save the communication scenario by pressing Ctrl + S
 ![Alt text](img/image-19.png)
 
-### Create database table for handler method
+### Step 3 Create database table for handler method
 Right-click your package and choose New > Other ABAP Repository Object > Database Table and click Next
 
 ![Alt text](img/image-20.png)
@@ -109,7 +109,7 @@ define table ztb_freightorder {
 ```
 Save and activate the table.
 
-### Define handle event methods
+### Step 4 Define handle event methods
 
 Navigate to Business Service > Event Consumption models > ZFREIGHTORDERCREATEDEVENT           0001 > Classes > ZCL_FREIGHTORDERCREATEDEVENT which is generated (or you can navigate to the Source Code Library > ZCL_FREIGHTORDERCREATEDEVENT). Here you can see the create Method.
 ![Alt text](img/image-25.png)
@@ -135,7 +135,7 @@ You need to copy the code below and replace it in your method.
 ![Alt text](img/image-26.png)
 
 
-### Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
+### Step 5 Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
 
 Then in Fiori launchpad of your SAP BTP ABAP environment system you first need to build a communication arrangement with sap_com_0092 scenario and the same service key instance you used to build your communication arrangement in the cloud system.
 

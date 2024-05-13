@@ -10,7 +10,10 @@ tags: []
 ![Alt text](./img/image-27.png)
 ![Alt text](./img/image-28.png)
 ![Alt text](./img/image-29.png)
+### Step 2 : Queue subscribtion.
 ![Alt text](./img/image-30.png)
+    Add topic:
+    com/sap/spaworkshop/ce/sap/s4/beh/FreightOrder/Created/v1
 ![Alt text](./img/image-31.png)
 
     Add another topic:
