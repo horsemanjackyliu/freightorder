@@ -7,3 +7,10 @@
 
 ### We will carry the following steps. Detailed information , please refer to the attachment of the card .
 
+
+We will carry the following steps. Detailed information , please refer to the attachment of the card .
+Step 1:Create Event Mesh Subscription
+Step 2: Assign Event Mesh role collections to your user account.
+Step 3: Create Event Mesh instance.
+Step 4: Create Event Mesh instance service key
+
