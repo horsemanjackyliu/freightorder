@@ -1,4 +1,4 @@
-## Segtion 1: Configue Event Mesh in BTP subaccount.
+## Segtion 1: Configure Event Mesh in BTP subaccount.
 
 ### Step 1:Create Event Mesh Subscription
 Since I have created event mesh subscription, so I can not create again. But if you have not created event mesh subscription, you can create a new event mesh subscription.
