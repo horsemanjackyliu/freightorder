@@ -2,14 +2,14 @@
 
 ### Step 1:Create Event Mesh Subscription
 Since I have created event mesh subscription, so I can not create again. But if you have not created event mesh subscription, you can create a new event mesh subscription.
-![Alt text](./img/image-1.png)
+![Alt text](./image-1.png)
 ### Step 2: Assign Event Mesh role collections to your user account.
-![Alt text](./img/image.png)
+![Alt text](./image.png)
 
-![Alt text](./img/image-2.png)
+![Alt text](./image-2.png)
 ### Step 3: Create Event Mesh instance.
-![Alt text](./img/image-3.png)
-![Alt text](./img/image-6.png)
+![Alt text](./image-3.png)
+![Alt text](./image-6.png)
 you can use json as the following file:
 
 ```json
@@ -42,13 +42,13 @@ you can use json as the following file:
     }
   }
   ```
-  ![Alt text](./img/image-5.png)
-![Alt text](./img/image-7.png)
+  ![Alt text](./image-5.png)
+![Alt text](./image-7.png)
 
 ### Step 4: Create Event Mesh instance service key
-![Alt text](./img/image-8.png)
-![Alt text](./img/image-9.png)
-![Alt text](./img/image-10.png)
-![Alt text](./img/image-11.png)
+![Alt text](./image-8.png)
+![Alt text](./image-9.png)
+![Alt text](./image-10.png)
+![Alt text](./image-11.png)
 We will use the copied service key information to create communication arrangements in S/4 Hana Cloud in following Segment.
 
