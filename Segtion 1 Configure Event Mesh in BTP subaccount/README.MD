@@ -1,3 +1,9 @@
+---
+noteId: "dcc7a4d0125b11efab669702a9e44628"
+tags: []
+
+---
+
 ## Segtion 1: Configure Event Mesh in BTP subaccount.
 
 ### Step 1:Create Event Mesh Subscription
@@ -51,4 +57,6 @@ you can use json as the following file:
 ![Alt text](./image-10.png)
 ![Alt text](./image-11.png)
 We will use the copied service key information to create communication arrangements in S/4 Hana Cloud in following Segment.
+
+
 
