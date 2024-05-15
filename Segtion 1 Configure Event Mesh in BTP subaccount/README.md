@@ -56,5 +56,6 @@ you can use json as the following file:
 ![Alt text](./image-9.png)
 ![Alt text](./image-10.png)
 ![Alt text](./image-11.png)
+
 We will use the copied service key information to create communication arrangements in S/4 Hana Cloud in following Segment.
 
