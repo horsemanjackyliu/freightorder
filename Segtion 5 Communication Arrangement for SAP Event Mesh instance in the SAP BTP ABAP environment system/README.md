@@ -1,8 +1,3 @@
----
-noteId: "7e9de90097ef11ee81b08720610998f3"
-tags: []
-
----
 
 ### Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
 

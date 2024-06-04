@@ -1,8 +1,3 @@
----
-noteId: "5501cda0d76e11eeb58c775b10b8c912"
-tags: []
-
----
 
 ## Prerequisites:
 

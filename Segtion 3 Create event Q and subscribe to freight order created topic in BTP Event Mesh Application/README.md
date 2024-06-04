@@ -1,8 +1,4 @@
----
-noteId: "e0ad05e0932611eeb554f34f44c206ba"
-tags: []
 
----
 
 ## Segtion 3: Create event Q and subscribe to freight order created topic in BTP Event Mesh Application.
 ### Step 1: Create event Q.

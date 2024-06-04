@@ -1,8 +1,3 @@
----
-noteId: "a72334d0931611eeb554f34f44c206ba"
-tags: []
-
----
 
 
 ## Segtion 2: Configue event in S/4 Hana Cloud.

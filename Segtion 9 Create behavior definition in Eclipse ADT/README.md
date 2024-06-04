@@ -1,8 +1,4 @@
----
-noteId: "2800fb10d51011eeb58c775b10b8c912"
-tags: []
 
----
 
 ### Step 1:  create behavior definition for view ZR_FREIGHTORDER 
 

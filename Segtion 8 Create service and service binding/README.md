@@ -1,8 +1,4 @@
----
-noteId: "2d865120d47a11eeb58c775b10b8c912"
-tags: []
 
----
 
 ## Step 1: Create Service definition in Eclipse Adt.
 ![Alt text](image.png)

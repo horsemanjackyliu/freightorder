@@ -1,8 +1,3 @@
----
-noteId: "a1b629a0c4ec11eeb55d7d9562d9e196"
-tags: []
-
----
 
 ## Step 1 Create communication arrangement in S/4HANA Cloud to expose Freight Order API .
 

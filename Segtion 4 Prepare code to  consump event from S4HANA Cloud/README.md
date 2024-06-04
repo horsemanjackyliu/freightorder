@@ -1,8 +1,3 @@
----
-noteId: "777dd480933c11eeb554f34f44c206ba"
-tags: []
-
----
 
 ## Step 1: Create Event Consumption Model
 

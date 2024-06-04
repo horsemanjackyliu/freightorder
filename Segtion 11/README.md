@@ -1,8 +1,4 @@
----
-noteId: "e5310520f7f411ee9a887fe204d6213e"
-tags: []
 
----
 ## Step 1: Create IAM App
 
 In Eclipse right-click your package ZFREIGHT_ORDER_EVENT_PACKAGE and select New > Other Repository Object.

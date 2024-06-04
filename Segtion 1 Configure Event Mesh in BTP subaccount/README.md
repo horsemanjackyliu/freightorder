@@ -1,8 +1,3 @@
----
-noteId: "0f34c5f0125d11efab669702a9e44628"
-tags: []
-
----
 
 ## Segtion 1: Configure Event Mesh in BTP subaccount.
 

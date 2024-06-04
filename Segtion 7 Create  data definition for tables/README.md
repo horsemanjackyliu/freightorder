@@ -1,8 +1,4 @@
----
-noteId: "494af240d3d411eeb58c775b10b8c912"
-tags: []
 
----
 ## Step 1: Create data definition for table ztb_freightorder.
 ![Alt text](image.png)
 ![Alt text](image-1.png)
