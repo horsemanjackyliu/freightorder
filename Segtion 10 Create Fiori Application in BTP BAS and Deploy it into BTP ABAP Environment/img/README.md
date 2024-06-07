@@ -4,7 +4,22 @@
 -  You have finished the [initial setting up for SAP Business Application Studio](https://help.sap.com/docs/bas/sap-business-application-studio/getting-started).
 -  You have [created Dev Space with type SAP Fiori in SAP Business Application Studio](https://help.sap.com/docs/bas/sap-business-application-studio/working-in-dev-space-manager)
 
-## Step 1:  Create Fiori Application in SAP Business Application Studio.
+
+## Step 1: Login into BTP subaccount which has BTP ABAP Environment instance .
+
+![alt text](image-12.png)
+![alt text](image-52.png)
+![alt text](image-53.png)
+![alt text](image-54.png)
+
+*Note: Pleae make sure that BTP Subaccount has instance BTP ABAP Environment. Please refer to the following screen shots * 
+
+![alt text](image-10.png)
+![alt text](image-11.png)
+
+
+
+## Step 2:  Create Fiori Application in SAP Business Application Studio.
 
 ![Alt text](image-13.png)
 ![Alt text](image-14.png)
@@ -12,10 +27,22 @@
 ![Alt text](image-16.png)
 ![Alt text](image-17.png)
 ![Alt text](image-18.png)
-![Alt text](image-19.png)
-![Alt text](image-2.png)
+![alt text](image-55.png)
+
+![alt text](image-56.png)
+
+Module name: freightordermgt
+Application title: Freight Order Attach Management
+Description: Attach Management-Freight Order
 ![Alt text](image-3.png)
+SAPUI5 ABAP Repository: ZFREIGHT_ORDER
+Package: ZFREIGHT_ORDER_EVENT_PACKAGE(Use your own package)
+Transport Request: H02K900024 (use your own transport request)
 ![Alt text](image-4.png)
+Semantic Object: FreightOrder
+Action: display
+Title: Freight Order
+Subtitle: Attach Management
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
@@ -23,7 +50,7 @@
 ![Alt text](image-9.png)
 
 
-## Step 2, Add custom controller to Object Page view.
+## Step 3, Add custom controller to Object Page view.
 ![alt text](image-20.png)
 ![alt text](image-21.png)
 ![alt text](image-22.png)
@@ -215,14 +242,14 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 
 ```
 
-## Step 3, Add custom action in Object Page view Header for Uploading File.
+## Step 4, Add custom action in Object Page view Header for Uploading File.
 ![alt text](image-20.png)
 ![alt text](image-33.png)
 ![alt text](image-34.png)
 ![alt text](image-35.png)
 
 
-## Step 4, Add custom section for freight order items in Object Page view.
+## Step 5, Add custom section for freight order items in Object Page view.
 
 ![alt text](image-24.png)
 ![alt text](image-26.png)
@@ -240,7 +267,7 @@ Adjust the fragement code as the following:
 
 ```
 
-## Step 5, Add fragment for uploading file under ext/fragment
+## Step 6, Add fragment for uploading file under ext/fragment
 ![alt text](image-28.png)
 ![alt text](image-29.png)
 Adjust the fragement code as the following:
@@ -265,7 +292,7 @@ Adjust the fragement code as the following:
 </core:FragmentDefinition>
 
 ```
-## Step 6, Add custom section for Attachment View in Object Page view.
+## Step 7, Add custom section for Attachment View in Object Page view.
 ![alt text](image-30.png)
 ![alt text](image-31.png)
 ![alt text](image-32.png)
@@ -290,12 +317,12 @@ Adjust the fragement code as the following:
 
 ```
 
-## Step 6, Add custom action for Attachment View in Object Page view Header.
+## Step 7, Add custom action for Attachment View in Object Page view Header.
 ![alt text](image-36.png)
 ![alt text](image-37.png)
 ![alt text](image-38.png)
 
-## Step 7, Application preview and testing.
+## Step 8, Application preview and testing.
 ![alt text](image-39.png)
 ![alt text](image-40.png)
 ![alt text](image-41.png)
@@ -306,7 +333,7 @@ Adjust the fragement code as the following:
 
 
 
-## Step 8: Deploy the Fiori application to BTP ABAP Environment.
+## Step 9: Deploy the Fiori application to BTP ABAP Environment.
 ![alt text](image-46.png)
 ![alt text](image-47.png)
 ![alt text](image-48.png)

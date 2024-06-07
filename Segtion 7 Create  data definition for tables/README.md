@@ -10,7 +10,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'ZR_FREIGHTORDER'
 define root view entity ZR_FREIGHTORDER as select from ZTB_FREIGHTORDER
-//composition of ZR_FORDER_ITEMS as _ITEMS
+//composition [0..*] of ZR_FORDER_ITEMS as _ITEMS
 {
     key transportationorderuuid as Transportationorderuuid,
     transportationorder as Transportationorder,
@@ -118,7 +118,7 @@ Push ***Command + S*** in Mac and activate it .
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'ZR_FREIGHTORDER'
 define root view entity ZR_FREIGHTORDER as select from ztb_freightorder
-composition of ZR_FORDER_ITEMS as _ITEMS
+composition [0..*] of ZR_FORDER_ITEMS as _ITEMS
 {
     key transportationorderuuid as Transportationorderuuid,
     transportationorder as Transportationorder,
@@ -196,7 +196,7 @@ define root view entity ZC_FREIGHTORDER as projection on ZR_FREIGHTORDER
     Repositoryid,
     Fileobjectid,
     /* Associations */
-    _ITEMS
+    _ITEMS : redirected to composition child ZC_FORDER_ITEMS
 }
 ```
 
@@ -270,7 +270,7 @@ define view entity ZC_FORDER_ITEMS
       TranspOrdItemNetWeig2,
       TranspOrdItemDngrsGds,
       /* Associations */
-      _FREIGHTORDER
+      _FREIGHTORDER : redirected to parent ZC_FREIGHTORDER
 }
 
 ```

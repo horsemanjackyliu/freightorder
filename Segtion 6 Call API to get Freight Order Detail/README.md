@@ -114,6 +114,8 @@ define table ztb_forder_items {
   transp_ord_item_net_weight    : menge_d;
   transp_ord_item_net_weig_2    : meins;
   transp_ord_item_dngrs_gds     : abap.char(1);
+  repositoryid                  : cmis_repository_id;
+  fileobjectid                  : cmis_id;
 
 }
 
@@ -121,8 +123,55 @@ define table ztb_forder_items {
 Push ***command + s*** in Mac to save then ***acivate*** it .
 ![Alt text](img/image-51.png)
 
+## Step 7 Create freight order table in Eclipse Adt .
 
-## Step 7 Adjust event handler to call service consumption model in Eclipse Adt .
+![Alt text](img/image-48.png)
+![alt text](image.png)
+![Alt text](img/image-50.png)
+
+```
+@EndUserText.label : 'Database table for freight order'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztb_freightorder {
+
+  key client                  : abap.clnt not null;
+  key transportationorderuuid : sysuuid_x16 not null;
+  transportationorder         : abap.char(20) not null;
+  carrier_uuid                : sysuuid_x16;
+  carrier                     : abap.char(10);
+  shipper_uuid                : sysuuid_x16;
+  shipper                     : abap.char(10);
+  shipper_address_id          : abap.char(40);
+  consignee_uuid              : sysuuid_x16;
+  consignee                   : abap.char(10);
+  consignee_address_id        : abap.char(40);
+  transp_purg_org             : abap.char(8);
+  transp_purg_group           : abap.char(8);
+  purg_org_company_code       : abap.char(4);
+  carrier_account_number      : abap.char(14);
+  transp_ord_invoicing_carri  : abap.char(2);
+  created_by_user             : abap.char(12);
+  creation_date_time          : xsddatetime_iso;
+  transportationmode          : abap.char(2);
+  transportationordertype     : abap.char(4);
+  transportationshippingtype  : abap.char(3);
+  transppurgorgextid          : abap.char(20);
+  transportation_mode_catego  : abap.char(1);
+  transp_ord_execution_is_bl  : abap_boolean;
+  transportation_order_exec   : abap.char(2);
+  repositoryid                : cmis_repository_id;
+  fileobjectid                : cmis_id;
+
+}
+```
+Push ***command + s*** in Mac to save then ***acivate*** it .
+![alt text](image-2.png)
+
+
+## Step 8 Adjust event handler to call service consumption model in Eclipse Adt .
 
 Before adjust
 ``` ABAP
@@ -321,7 +370,7 @@ ENDCLASS.
 Push ***command + s*** in Mac to save then ***acivate*** it .
 
 
-## Step 8 Create freight order in S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
+## Step 9 Create freight order in S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
 
 ### Create freight order in S/4HANA Cloud
 ![Alt text](img/image-20%5B1%5D.png)
