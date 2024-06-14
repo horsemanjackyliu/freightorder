@@ -45,20 +45,35 @@ Title: Freight Order
 Subtitle: Attach Management
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
-![Alt text](image-7.png)
-![Alt text](image-8.png)
-![Alt text](image-9.png)
+![alt text](image-57.png)
+![alt text](image-58.png)
+![alt text](image-59.png)
+![alt text](image-60.png)
+![alt text](image-91.png)
+![alt text](image-62.png)
+![alt text](image-63.png)
+![alt text](image-64.png)
+![alt text](image-65.png)
+
 
 
 ## Step 3, Add custom controller to Object Page view.
-![alt text](image-20.png)
-![alt text](image-21.png)
-![alt text](image-22.png)
-![alt text](image-23.png)
+![alt text](image-67.png)
+![alt text](image-68.png)
+![alt text](image-69.png)
+![alt text](image-66.png)
+![alt text](image-70.png)
+![alt text](image-71.png)
+
+Controller Name: FoController
+![alt text](image-72.png)
+
+
 
 Adjust FoController as the following code .
 
 ```javascript
+
 sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONModel','sap/m/MessageToast','sap/base/security/URLWhitelist','sap/ui/core/message/Message', 'sap/ui/core/message/MessageType'], function (ControllerExtension,JSONModel,MessageToast,URLWhitelist,Message, MessageType) {
 	'use strict';
 
@@ -67,20 +82,19 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 		pDialog : null,
 		pdf_content: null,
 		uploadfiles: function() {
-
-			if (!this.pDialog) { 
-				this.base.getExtensionAPI()
-				.loadFragment({
-					name: "freightordermgt.ext.fragment.fileselector",
-					controller: this
-				}).then((oDialog)=>{
+			if (!this.pDialog) { 	
+				this.base.getExtensionAPI().loadFragment({
+					name: "freightordermgt.ext.fragment.fileselector"
+				}).then(function(oDialog){
+					// oDialog.open();
 					this.pDialog = oDialog;
-					oDialog.open();
+					oDialog = null;
+					this.pDialog.open();
 				 var oFileUploader = this.pDialog.getContent('uploadSet')[0];
 				 if(oFileUploader){
 					oFileUploader.removeAllItems();
 				 }				
-				}).catch(error=>{alert(error.message)})
+				}.bind(this)).catch(error=>{alert(error.message)})
 			}else{
 				var oFileUploader =  this.pDialog.getContent('uploadSet')[0];
 				if(oFileUploader){
@@ -160,10 +174,10 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 
 			const oFunction = oModel.bindContext(`${sPath}/${sFunctionname}(...)`);
 			oFunction.setParameter("filename",sFileName);
-			oFunction.setParameter("mime_type",sMimtype);
+			oFunction.setParameter("mimetype",sMimtype);
 			var content = btoa(this.pdf_content);
 
-			oFunction.setParameter("stream",content); 
+			oFunction.setParameter("attachment",content); 
 		   oFunction.execute().then(result=>{
 			MessageToast.show("File Uploaded into BTP CMIS!");
 			// console.log(result);
@@ -203,6 +217,9 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
             /* TODO: Clear the already read excel file data */          
          },
 
+		
+		
+		
 		override: {
 			/**
              * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -210,9 +227,9 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
              * @memberOf freightordermgt.ext.controller.FoController
              */
 			onInit: function () {
-
+				// you can access the Fiori elements extensionAPI via this.base.getExtensionAPI
+				var oModel = this.base.getExtensionAPI().getModel();
 			},
-
 			routing: {
 				onAfterBinding: function (oBindingContext, mParameters) {
 					var extensionAPI = this.base.getExtensionAPI(),
@@ -240,36 +257,60 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 	});
 });
 
+
 ```
+![alt text](image-73.png)
 
-## Step 4, Add custom action in Object Page view Header for Uploading File.
-![alt text](image-20.png)
-![alt text](image-33.png)
-![alt text](image-34.png)
-![alt text](image-35.png)
+## Step 4, Add custom action in item Object Page view Header for Uploading File.
+
+![alt text](image-74.png)
+![alt text](image-75.png)
+![alt text](image-76.png)
+![alt text](image-77.png)
+Action ID:UploadFiles
+Button Text: Upload Files
+![alt text](image-78.png)
 
 
-## Step 5, Add custom section for freight order items in Object Page view.
+## Step 5, Add custom section for Attachment View in item Object Page view.
+![alt text](image-79.png)
+![alt text](image-80.png)
+![alt text](image-81.png)
 
-![alt text](image-24.png)
-![alt text](image-26.png)
-![alt text](image-25.png)
-![alt text](image-27.png)
+Title: AttachmentViewer
+Fragment Name: PdfFragment
+![alt text](image-82.png)
+
 
 Adjust the fragement code as the following:
 ```xml
-<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros">
-
-	<macros:Table id="itemtable" metaPath="_ITEMS/@com.sap.vocabularies.UI.v1.PresentationVariant" header="Items" personalization="Column" readOnly="{ui>/isEditable}"
-	
-	></macros:Table>
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros" validationSuccess=".extension.freightordermgt.ext.controller.FoController.onFragVali" >
+		<ScrollContainer id="_IDGenScrollContainer1"
+		height="100%"
+		width="100%"
+		horizontal="true"
+		vertical="true" visible="{pdfview>/Viewshow}">
+		<FlexBox id="_IDGenFlexBox1" direction="Column" renderType="Div" class="sapUiSmallMargin">
+			<PDFViewer id="_IDGenPDFViewer1" source="{pdf>/Source}" isTrustedSource="true" title="{pdf>/Title}" height="{pdf>/Height}" >
+				<layoutData>
+					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" />
+				</layoutData>
+			</PDFViewer>
+		</FlexBox>
+	</ScrollContainer>
 </core:FragmentDefinition>
 
 ```
+![alt text](image-83.png)
 
-## Step 6, Add fragment for uploading file under ext/fragment
-![alt text](image-28.png)
-![alt text](image-29.png)
+## Step 5, Add fragment for uploading file under ext/fragment
+![alt text](image-84.png)
+![alt text](image-85.png)
+
+
+**please change the file name to : fileselector.fragment.xml**
+
+
 Adjust the fragement code as the following:
 ```XML
 <core:FragmentDefinition  xmlns="sap.m" xmlns:l="sap.ui.layout"  xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified" xmlns:upload="sap.m.upload" >
@@ -292,44 +333,33 @@ Adjust the fragement code as the following:
 </core:FragmentDefinition>
 
 ```
-## Step 7, Add custom section for Attachment View in Object Page view.
-![alt text](image-30.png)
-![alt text](image-31.png)
-![alt text](image-32.png)
 
-Adjust the fragement code as the following:
-```xml
-<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros" validationSuccess=".extension.freightordermgt.ext.controller.FoController.onFragVali"   >
-	<ScrollContainer id="_IDGenScrollContainer1"
-		height="100%"
-		width="100%"
-		horizontal="true"
-		vertical="true" visible="{pdfview>/Viewshow}">
-		<FlexBox id="_IDGenFlexBox1" direction="Column" renderType="Div" class="sapUiSmallMargin">
-			<PDFViewer id="_IDGenPDFViewer1" source="{pdf>/Source}" isTrustedSource="true" title="{pdf>/Title}" height="{pdf>/Height}" >
-				<layoutData>
-					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" />
-				</layoutData>
-			</PDFViewer>
-		</FlexBox>
-	</ScrollContainer>
-</core:FragmentDefinition>
 
-```
+## Step 6, Add custom action for Attachment View in item Object Page view Header.
+![alt text](image-86.png)
+![alt text](image-87.png)
+![alt text](image-88.png)
+![alt text](image-89.png)
 
-## Step 7, Add custom action for Attachment View in Object Page view Header.
-![alt text](image-36.png)
-![alt text](image-37.png)
-![alt text](image-38.png)
+Action ID: showpdf
+Button Text: Show PDF
+![alt text](image-90.png)
 
-## Step 8, Application preview and testing.
+
+## Step 7, Application preview and testing.
 ![alt text](image-39.png)
 ![alt text](image-40.png)
 ![alt text](image-41.png)
-![alt text](image-42.png)
-![alt text](image-43.png)
-![alt text](image-44.png)
-![alt text](image-45.png)
+![alt text](image-92.png)
+![alt text](image-93.png)
+![alt text](image-94.png)
+![alt text](image-95.png)
+![alt text](image-96.png)
+![alt text](image-97.png)
+![alt text](image-98.png)
+![alt text](image-100.png)
+
+
 
 
 

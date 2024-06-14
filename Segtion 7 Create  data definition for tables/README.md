@@ -105,6 +105,8 @@ define view entity ZR_FORDER_ITEMS
       transp_ord_item_net_weight as TranspOrdItemNetWeight,
       transp_ord_item_net_weig_2 as TranspOrdItemNetWeig2,
       transp_ord_item_dngrs_gds  as TranspOrdItemDngrsGds,
+      repositoryid as Repositoryid,
+      fileobjectid as Fileobjectid, 
       _FREIGHTORDER // Make association public
 }
 
@@ -269,6 +271,8 @@ define view entity ZC_FORDER_ITEMS
       TranspOrdItemNetWeight,
       TranspOrdItemNetWeig2,
       TranspOrdItemDngrsGds,
+      Repositoryid,
+      Fileobjectid,
       /* Associations */
       _FREIGHTORDER : redirected to parent ZC_FREIGHTORDER
 }
@@ -785,6 +789,22 @@ annotate view ZC_FORDER_ITEMS with
     position: 260,label:'DangerousGoods'
   } ]
   TranspOrdItemDngrsGds;
+      @UI.lineItem: [ {
+  position: 270 ,label: 'SDMRepositoryid',
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 270,label: 'SDMRepositoryid'
+  } ]
+   repositoryid;
+  @UI.lineItem: [ {
+  position: 280 ,label: 'SDMFileobjectID',
+  importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 280,label: 'SDMFileobjectID'
+  } ]
+  fileobjectid;
 
 
 }

@@ -13,8 +13,14 @@ Description: FreightOrder Management IAM APP
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 Click Finish.
+
+![alt text](image-44.png)
+![alt text](image-45.png)
+Maintain Item Id
 ![alt text](image-4.png)
 ![alt text](image-5.png)
+
+
 Select following:
 
 Service Type: OData V4
@@ -120,6 +126,14 @@ Go back to the SAP Fiori homepage and select the Maintain Business Roles tile.
 Open the Manage Launchpad Pages tile.
 ![alt text](image-42.png)
 ![alt text](image-43.png)
+![alt text](image-47.png)
+![alt text](image-48.png)
+
+## Step 6: Create Launchpad Space.
+
+
+
+
 
 
 
