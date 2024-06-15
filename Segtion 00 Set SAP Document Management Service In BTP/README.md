@@ -1,5 +1,6 @@
 ## Prerequisites:
 - Please make sure you have the roles in the following screenshots to finish the whole mission.
+![alt text](image-27.png)
 ![alt text](image-23.png)
 ![alt text](image-26.png)
 ![alt text](image-25.png)
@@ -18,7 +19,7 @@ As the result, we will get the  service instance and servicef key in BTP Subacco
 
 ## step 2 Onboard a repository. For more information, see [SAP API Business Hub - Administrative Operations](https://api.sap.com/api/AdminAPI/tryout).
 
-Login with your username and password.
+After logining with your username and password.
 
 ![alt text](image-3.png)
 ![alt text](image-7.png)
