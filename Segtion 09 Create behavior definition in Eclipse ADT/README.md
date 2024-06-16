@@ -465,7 +465,6 @@ CLASS lhc_ZR_FREIGHTORDER IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
-
 ```
 
 Activate the behavior definition .
@@ -479,3 +478,32 @@ Activate the behavior definition .
 ![Alt text](image-8.png)
 ![Alt text](image-5.png)
 ![Alt text](image-9.png)
+
+Adjust the behavior code of  ZC_FREIGHTORDER as the following:
+
+```
+projection;
+strict ( 2 );
+
+define behavior for ZC_FREIGHTORDER //alias <alias_name>
+{
+//  use create;
+  use update;
+//  use delete;
+  use action uploadfile;
+  use function downloadfile;
+  use association _items {create;}
+
+
+}
+
+define behavior for ZC_FORDER_ITEMS
+{
+  use update;
+////  use delete;
+  use action uploadfile;
+  use function downloadfile;
+use association _FREIGHTORDER;
+}
+```
+Save and activate the behavior definition for ZC_FREIGHTORDER.
