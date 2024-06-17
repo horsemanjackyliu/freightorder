@@ -31,11 +31,13 @@
 
 ![alt text](image-56.png)
 
+please use ui5 version 1.120.12
+
 Module name: freightordermgt
 Application title: Freight Order Attach Management
 Description: Attach Management-Freight Order
 ![Alt text](image-3.png)
-SAPUI5 ABAP Repository: ZFREIGHT_ORDER
+SAPUI5 ABAP Repository: ZFREIGHTORDER
 Package: ZFREIGHT_ORDER_EVENT_PACKAGE(Use your own package)
 Transport Request: H02K900024 (use your own transport request)
 ![Alt text](image-4.png)
