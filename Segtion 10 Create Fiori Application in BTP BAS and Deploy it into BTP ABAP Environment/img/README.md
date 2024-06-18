@@ -29,9 +29,9 @@
 ![Alt text](image-18.png)
 ![alt text](image-55.png)
 
-![alt text](image-56.png)
+![alt text](image-105.png)
 
-please use ui5 version 1.120.12
+please use ui5 version 1.120.8
 
 Module name: freightordermgt
 Application title: Freight Order Attach Management
