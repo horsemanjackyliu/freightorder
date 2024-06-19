@@ -129,7 +129,6 @@ Open the Manage Launchpad Pages tile.
 ![alt text](image-47.png)
 ![alt text](image-48.png)
 
-## Step 6: Create Launchpad Space.
 
 
 
