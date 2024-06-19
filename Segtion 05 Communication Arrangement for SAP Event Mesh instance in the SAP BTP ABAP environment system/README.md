@@ -68,12 +68,10 @@ The subscription status must be **Acknowledged**.
 ![Alt text](img/image-20.png)
 ![Alt text](img/image-21.png)
 ![Alt text](img/image-22.png)
-![Alt text](img/image-23.png)
 ![Alt text](img/image-24.png)
 ## Check result in table in Eclipse ADT
 ![Alt text](img/image-25.png)
 right click
-![Alt text](img/image-26.png)
 ![Alt text](img/image-27.png)
 
 
