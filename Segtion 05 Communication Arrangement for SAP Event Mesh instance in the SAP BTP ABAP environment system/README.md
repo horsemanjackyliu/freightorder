@@ -14,8 +14,6 @@ Then in Fiori launchpad of your SAP BTP ABAP environment system you first need t
 Choose sap_com_0092 as Scenario and copy the service key of your event mesh instance under Service Key(Segtion 1 step 4) . You need to create a Communication User. Click New and enter a User Name, Description and Propose Password. Copy the generated password and save it for later. Click Create.
 
 
-syLJsdNWsBHgVvV7RicMxw)SGbBQQmnThaWYTFpr
-
 ![Alt text](img/image-2.png)
 ![Alt text](img/image-3.png)
 

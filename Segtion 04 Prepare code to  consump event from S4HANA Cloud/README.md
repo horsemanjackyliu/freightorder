@@ -130,21 +130,6 @@ You need to copy the code below and replace it in your method.
 ![Alt text](img/image-26.png)
 
 
-### Step 5 Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
-
-Then in Fiori launchpad of your SAP BTP ABAP environment system you first need to build a communication arrangement with sap_com_0092 scenario and the same service key instance you used to build your communication arrangement in the cloud system.
-
-To open the Fiori launchpad right-click your project in ADT and navigate to Properties
-
-![Alt text](image-27.png)
-Click Service URL to open the dashboard of this system.
-![Alt text](image-28.png)
-Navigate to Communication Arrangement and click New to create a communication arrangement.
-Choose sap_com_0092 as **Scenario** and copy the service key of your event mesh instance under Service Key. You need to create a **Communication User**. Click **New** and enter a **User Name**, **Description** and **Propose Password**. Copy the generated password and save it for later. Click **Create**.
-
-Now you need to change the **Arrangement** Name to **ZPM_EVT_0092_FreightOrder** .
-
-Click **Create** communication arrangement.
 
 
 
