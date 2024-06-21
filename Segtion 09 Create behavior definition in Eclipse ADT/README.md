@@ -1,6 +1,31 @@
 
 
-### Step 1:  create behavior definition for view ZR_FREIGHTORDER 
+### Step 1: Create data definition zfile_content_raw which is used in action uploadfiles.
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+- Name: zfile_content_raw
+- Description: File Content Raw
+![alt text](image-16.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
+
+Adjust the code as the following:
+```
+@EndUserText.label: 'File Content Raw'
+define abstract entity zfile_content_raw
+{
+  filename  : cmis_string;
+  mime_type : cmis_string;
+  stream    : abap.rawstring(0);
+    
+}
+```
+
+**Save and Activate the data definition**
+
+
+### Step 2:  create behavior definition for view ZR_FREIGHTORDER 
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
@@ -472,7 +497,7 @@ Activate the behavior definition .
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 
-### Step 2:  create behavior definition for view ZC_FREIGHTORDER 
+### Step 3:  create behavior definition for view ZC_FREIGHTORDER 
 
 ![Alt text](image-7.png)
 ![Alt text](image-8.png)
