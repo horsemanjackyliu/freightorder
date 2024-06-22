@@ -114,9 +114,9 @@ Remove comment from these lines:
 DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_BusinessPartner_Created_v1.      
   ls_business_data = io_event->get_business_data( ).
 ```
-You need to copy the code below and replace it in your method.
+You need to adjust the code as the following in your method. pLease don't just copy and paste.
 ```
-   DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_FreightOrder_Created_v1_568B.
+   DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_FreightOrder_Created_v1_568B. //this line maybe deifferent .
    data wa type ztb_freightorder .
    ls_business_data = io_event->get_business_data( ).
    wa-carrier = ls_business_data-Carrier.

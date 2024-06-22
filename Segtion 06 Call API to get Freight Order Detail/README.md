@@ -171,7 +171,7 @@ Push ***command + s*** in Mac to save then ***acivate*** it .
 ![alt text](image-2.png)
 
 
-## Step 8 Adjust event handler to call service consumption model in Eclipse Adt .
+## Step 8 Adjust event handler to call service consumption model in Eclipse Adt .Please don't copy and paste the code .
 
 Before adjust
 ``` ABAP
