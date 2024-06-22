@@ -11,5 +11,5 @@ Make sure the following roles exist,if they are missiong ,click **Create From Te
 ## Step 2: Assign the roles to your user account.
 ![alt text](image-3.png)
 ![alt text](image-7.png)
-Make sure the following roles has been assigned to your user account. If not, click **Add** to add the mission roles.
+Make sure the following roles has been assigned to your user account. If not, click **Add** to add the missing roles.
 ![alt text](image-8.png)
