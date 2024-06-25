@@ -129,6 +129,14 @@ You need to adjust the code as the following in your method. pLease don't just c
 ```
 ![Alt text](img/image-26.png)
 
+**Please save and activate the class**
+
+### Step 5 Acctivate the  Define handle event methods
+
+Please right click the communication scenario and select activate to activate the communication scenario.
+
+
+
 
 
 
