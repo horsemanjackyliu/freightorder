@@ -1,14 +1,12 @@
 
-
-## Segtion 3: Create event Q and subscribe to freight order created topic in BTP Event Mesh Application.
-### Step 1: Create event Q.
+### 1. Create an event queue.
 ![Alt text](./image-26.png)
 ![Alt text](./image-27.png)
 ![Alt text](./image-28.png)
 ![Alt text](./image-29.png)
-### Step 2 : Queue subscribtion.
+### 2. Queue subscription
 ![Alt text](./image-30.png)
-    Add topic:
+    Add the following topic: 
     com/sap/spaworkshop/ce/sap/s4/beh/FreightOrder/Created/v1
 ![Alt text](./image-31.png)
 

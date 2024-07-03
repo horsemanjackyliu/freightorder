@@ -1,17 +1,14 @@
-
-## Segtion 1: Configure Event Mesh in BTP subaccount.
-
-### Step 1:Create Event Mesh Subscription
-Since I have created event mesh subscription, so I can not create again. But if you have not created event mesh subscription, you can create a new event mesh subscription.
+### 1. Create an Event Mesh subscription
+If you don’t have an Event Mesh subscription, create a new one. 
 ![Alt text](./image-1.png)
-### Step 2: Assign Event Mesh role collections to your user account.
+### 2. Assign Event Mesh role collections to your user account.
 ![Alt text](./image.png)
 
 ![Alt text](./image-2.png)
-### Step 3: Create Event Mesh instance.
+### 3. Create an Event Mesh instance.
 ![Alt text](./image-3.png)
 ![Alt text](./image-6.png)
-you can use json as the following file:
+You can use the following JSON file:
 
 ```json
 {
@@ -46,11 +43,11 @@ you can use json as the following file:
   ![Alt text](./image-5.png)
 ![Alt text](./image-7.png)
 
-### Step 4: Create Event Mesh instance service key
+### 4. Create an Event Mesh instance service key
 ![Alt text](./image-8.png)
 ![Alt text](./image-9.png)
 ![Alt text](./image-10.png)
 ![Alt text](./image-11.png)
 
-We will use the copied service key information to create communication arrangements in S/4 Hana Cloud in following Segment.
+We will use the copied service key to create communication arrangements in SAP S/4Hana Cloud.
 
