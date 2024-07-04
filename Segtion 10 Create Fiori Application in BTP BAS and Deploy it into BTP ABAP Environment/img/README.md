@@ -36,15 +36,20 @@ please use ui5 version 1.120.8
 - Module name: freightordermgt
 - Application title: Freight Order Attach Management
 - Description: Attach Management-Freight Order
+
 ![Alt text](image-3.png)
+
 - SAPUI5 ABAP Repository: ZFREIGHTORDER
 - Package: ZFREIGHT_ORDER_EVENT_PACKAGE(Use your own package)
 - Transport Request: H02K900024 (use your own transport request)
+
 ![Alt text](image-4.png)
+
 - Semantic Object: FreightOrder
 - Action: display
 - Title: Freight Order
 - Subtitle: Attach Management
+
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![alt text](image-57.png)
@@ -58,6 +63,7 @@ please use ui5 version 1.120.8
 ![alt text](image-65.png)
 
 ## 3. Add custom controller to Object Page view.
+
 ![alt text](image-67.png)
 ![alt text](image-68.png)
 ![alt text](image-69.png)
@@ -66,6 +72,7 @@ please use ui5 version 1.120.8
 ![alt text](image-71.png)
 
 Controller Name: FoController
+
 ![alt text](image-72.png)
 
 
@@ -267,18 +274,22 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 ![alt text](image-75.png)
 ![alt text](image-76.png)
 ![alt text](image-77.png)
+
 - Action ID: UploadFiles
 - Button Text: Upload Files
+
 ![alt text](image-78.png)
 
 
 ## 5. Add custom section for Attachment View in item Object Page view.
+
 ![alt text](image-79.png)
 ![alt text](image-80.png)
 ![alt text](image-81.png)
 
 - Title: AttachmentViewer
 - Fragment Name: PdfFragment
+
 ![alt text](image-82.png)
 
 
@@ -304,6 +315,7 @@ Adjust the fragement code as the following:
 ![alt text](image-83.png)
 
 ## 5. Add fragment for uploading file under ext/fragment
+
 ![alt text](image-84.png)
 ![alt text](image-85.png)
 
@@ -336,6 +348,7 @@ Adjust the fragement code as the following:
 
 
 ## 6. Add custom action for Attachment View in item Object Page view Header.
+
 ![alt text](image-86.png)
 ![alt text](image-87.png)
 ![alt text](image-88.png)
@@ -343,10 +356,12 @@ Adjust the fragement code as the following:
 
 - Action ID: showpdf
 - Button Text: Show PDF
+
 ![alt text](image-90.png)
 
 
 ## 7. Application preview and testing.
+
 ![alt text](image-39.png)
 ![alt text](image-40.png)
 ![alt text](image-41.png)
@@ -361,6 +376,7 @@ Adjust the fragement code as the following:
 
 
 ## 8. Deploy the Fiori application to SAP BTP ABAP Environment.
+
 ![alt text](image-46.png)
 ![alt text](image-47.png)
 ![alt text](image-48.png)
@@ -368,6 +384,7 @@ Adjust the fragement code as the following:
 ![alt text](image-50.png)
 
 Check the fiori application in Eclipse ADT.
+
 ![alt text](image-51.png)
 
 
