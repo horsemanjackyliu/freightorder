@@ -5,14 +5,14 @@
 -  You have [created Dev Space with type SAP Fiori in SAP Business Application Studio](https://help.sap.com/docs/bas/sap-business-application-studio/working-in-dev-space-manager)
 
 
-## 1. Login into BTP subaccount which has SAP BTP ABAP Environment instance .
+## 1. Login into SAP BTP sub-account which has SAP BTP ABAP Environment instance .
 
 ![alt text](image-12.png)
 ![alt text](image-52.png)
 ![alt text](image-53.png)
 ![alt text](image-54.png)
 
-**Note: Pleae make sure that BTP Subaccount has instance SAP BTP ABAP Environment. Please refer to the following screen shots**
+**Note: Pleae make sure that BTP Sub-account has instance SAP BTP ABAP Environment. Please refer to the following screen shots**
 
 ![alt text](image-10.png)
 ![alt text](image-11.png)
@@ -293,7 +293,7 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 ![alt text](image-82.png)
 
 
-Adjust the fragement code as the following:
+Adjust the fragment code as the following:
 ```xml
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros" validationSuccess=".extension.freightordermgt.ext.controller.FoController.onFragVali" >
 		<ScrollContainer id="_IDGenScrollContainer1"
@@ -383,7 +383,7 @@ Adjust the fragement code as the following:
 ![alt text](image-49.png)
 ![alt text](image-50.png)
 
-Check the fiori application in Eclipse ADT.
+Check the Fiori Application in Eclipse ADT.
 
 ![alt text](image-51.png)
 

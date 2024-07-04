@@ -287,12 +287,12 @@ Push ***Command + S*** in Mac and activate it .
 
 ![Alt text](image-27.png)
 
-## 6. Create anotation for projection view ZC_FREIGHTORDER.
+## 6. Create annotation for projection view ZC_FREIGHTORDER.
 
 ![Alt text](image-19.png)
 
 Name:ZC_FREIGHTORDER
-Description: Anotation for projection view ZC_FREIGHTORDER
+Description: Annotation for projection view ZC_FREIGHTORDER
 
 ![Alt text](image-20.png)
 ![Alt text](image-21.png)

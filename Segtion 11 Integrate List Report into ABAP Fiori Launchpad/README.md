@@ -37,6 +37,7 @@ Click on Publish Locally
 ![alt text](image-7.png)
 
 ## 2. Create business catalog
+
 ![alt text](image.png)
 ![alt text](image-8.png)
 
@@ -44,7 +45,7 @@ Click on Publish Locally
 
 Create a new business catalog:
 - Name: ZFREIGHTORDER_BC2
-- Description: Freight Order Management Businessf Catalog
+- Description: Freight Order Management Business Catalog
 
 ![alt text](image-10.png)
 

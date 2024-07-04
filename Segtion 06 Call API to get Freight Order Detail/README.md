@@ -125,7 +125,8 @@ define table ztb_forder_items {
 }
 
 ```
-Push ***command + s*** in Mac to save then ***acivate*** it .
+Push ***command + s*** in Mac to save then ***activate*** it .
+
 ![Alt text](img/image-51.png)
 
 ## 7. Create freight order table in Eclipse Adt .
@@ -173,7 +174,7 @@ define table ztb_freightorder {
 }
 ```
 
-Push ***command + s*** in Mac to save then ***acivate*** it .
+Push ***command + s*** in Mac to save then ***activate*** it .
 
 ![alt text](image-2.png)
 
