@@ -1,9 +1,7 @@
-
-
-## Step 1: Create Service definition in Eclipse Adt.
+## 1. Create Service definition in Eclipse Adt.
 ![Alt text](image.png)
-Name:ZFREIGHTORDER_SERVICE
-Description: Service definition for  Freight Order
+- Name: ZFREIGHTORDER_SERVICE
+- Description: Service definition for Freight Order
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
 ![Alt text](image-3.png)
@@ -19,10 +17,10 @@ define service ZFREIGHTORDER_SERVICE {
 
 Push ***Command + S*** in Mac and activate it .
 
-## Step 2: Create Service binding for ZFREIGHTORDER_SERVICE in Eclipse Adt.
+## 2. Create Service binding for ZFREIGHTORDER_SERVICE in Eclipse Adt.
 ![Alt text](image-5.png)
-Name:ZFREIGHTORDER_SRV_BIND
-Description: Service Binding for ZFREIGHTORDER_SERVICE
+- Name: ZFREIGHTORDER_SRV_BIND
+- Description: Service Binding for ZFREIGHTORDER_SERVICE
 ![Alt text](image-11.png)
 ![Alt text](image-7.png)
 Activate the service binding .

@@ -5,21 +5,21 @@
 -  You have [created Dev Space with type SAP Fiori in SAP Business Application Studio](https://help.sap.com/docs/bas/sap-business-application-studio/working-in-dev-space-manager)
 
 
-## Step 1: Login into BTP subaccount which has BTP ABAP Environment instance .
+## 1. Login into BTP subaccount which has SAP BTP ABAP Environment instance .
 
 ![alt text](image-12.png)
 ![alt text](image-52.png)
 ![alt text](image-53.png)
 ![alt text](image-54.png)
 
-*Note: Pleae make sure that BTP Subaccount has instance BTP ABAP Environment. Please refer to the following screen shots * 
+**Note: Pleae make sure that BTP Subaccount has instance SAP BTP ABAP Environment. Please refer to the following screen shots**
 
 ![alt text](image-10.png)
 ![alt text](image-11.png)
 
 
 
-## Step 2:  Create Fiori Application in SAP Business Application Studio.
+## 2. Create Fiori Application in SAP Business Application Studio.
 
 ![Alt text](image-13.png)
 ![Alt text](image-14.png)
@@ -33,18 +33,18 @@
 
 please use ui5 version 1.120.8
 
-Module name: freightordermgt
-Application title: Freight Order Attach Management
-Description: Attach Management-Freight Order
+- Module name: freightordermgt
+- Application title: Freight Order Attach Management
+- Description: Attach Management-Freight Order
 ![Alt text](image-3.png)
-SAPUI5 ABAP Repository: ZFREIGHTORDER
-Package: ZFREIGHT_ORDER_EVENT_PACKAGE(Use your own package)
-Transport Request: H02K900024 (use your own transport request)
+- SAPUI5 ABAP Repository: ZFREIGHTORDER
+- Package: ZFREIGHT_ORDER_EVENT_PACKAGE(Use your own package)
+- Transport Request: H02K900024 (use your own transport request)
 ![Alt text](image-4.png)
-Semantic Object: FreightOrder
-Action: display
-Title: Freight Order
-Subtitle: Attach Management
+- Semantic Object: FreightOrder
+- Action: display
+- Title: Freight Order
+- Subtitle: Attach Management
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![alt text](image-57.png)
@@ -57,9 +57,7 @@ Subtitle: Attach Management
 ![alt text](image-64.png)
 ![alt text](image-65.png)
 
-
-
-## Step 3, Add custom controller to Object Page view.
+## 3. Add custom controller to Object Page view.
 ![alt text](image-67.png)
 ![alt text](image-68.png)
 ![alt text](image-69.png)
@@ -72,7 +70,7 @@ Controller Name: FoController
 
 
 
-Adjust FoController as the following code .
+Adjust FoController like the following code .
 
 ```javascript
 
@@ -263,24 +261,24 @@ sap.ui.define(['sap/ui/core/mvc/ControllerExtension','sap/ui/model/json/JSONMode
 ```
 ![alt text](image-73.png)
 
-## Step 4, Add custom action in item Object Page view Header for Uploading File.
+## 4. Add custom action in item Object Page view Header for Uploading File.
 
 ![alt text](image-74.png)
 ![alt text](image-75.png)
 ![alt text](image-76.png)
 ![alt text](image-77.png)
-Action ID:UploadFiles
-Button Text: Upload Files
+- Action ID: UploadFiles
+- Button Text: Upload Files
 ![alt text](image-78.png)
 
 
-## Step 5, Add custom section for Attachment View in item Object Page view.
+## 5. Add custom section for Attachment View in item Object Page view.
 ![alt text](image-79.png)
 ![alt text](image-80.png)
 ![alt text](image-81.png)
 
-Title: AttachmentViewer
-Fragment Name: PdfFragment
+- Title: AttachmentViewer
+- Fragment Name: PdfFragment
 ![alt text](image-82.png)
 
 
@@ -305,7 +303,7 @@ Adjust the fragement code as the following:
 ```
 ![alt text](image-83.png)
 
-## Step 5, Add fragment for uploading file under ext/fragment
+## 5. Add fragment for uploading file under ext/fragment
 ![alt text](image-84.png)
 ![alt text](image-85.png)
 
@@ -337,18 +335,18 @@ Adjust the fragement code as the following:
 ```
 
 
-## Step 6, Add custom action for Attachment View in item Object Page view Header.
+## 6. Add custom action for Attachment View in item Object Page view Header.
 ![alt text](image-86.png)
 ![alt text](image-87.png)
 ![alt text](image-88.png)
 ![alt text](image-89.png)
 
-Action ID: showpdf
-Button Text: Show PDF
+- Action ID: showpdf
+- Button Text: Show PDF
 ![alt text](image-90.png)
 
 
-## Step 7, Application preview and testing.
+## 7. Application preview and testing.
 ![alt text](image-39.png)
 ![alt text](image-40.png)
 ![alt text](image-41.png)
@@ -362,17 +360,14 @@ Button Text: Show PDF
 ![alt text](image-100.png)
 
 
-
-
-
-## Step 9: Deploy the Fiori application to BTP ABAP Environment.
+## 8. Deploy the Fiori application to SAP BTP ABAP Environment.
 ![alt text](image-46.png)
 ![alt text](image-47.png)
 ![alt text](image-48.png)
 ![alt text](image-49.png)
 ![alt text](image-50.png)
 
-Check the fiori application in Eclipse ADT .
+Check the fiori application in Eclipse ADT.
 ![alt text](image-51.png)
 
 

@@ -1,15 +1,15 @@
 
-### Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
+### 1. Communication Arrangement for SAP Event Mesh instance in the SAP BTP ABAP environment system
 
 Then in Fiori launchpad of your SAP BTP ABAP environment system you first need to build a communication arrangement with sap_com_0092 scenario and the same service key instance you used to build your communication arrangement in the cloud system.
 
-### To open the Fiori launchpad right-click your project in ADT and navigate to Properties
+### 2. To open the Fiori launchpad right-click your project in ADT and navigate to Properties
 
 ![Alt text](img/image.png)
-### Click Service URL to open the dashboard of this system.
+### 3. Click Service URL to open the dashboard of this system.
 ![Alt text](img/image-1.png)
 
-### Navigate to Communication Arrangement and click New to create a communication arrangement.
+### 4. Navigate to Communication Arrangement and click New to create a communication arrangement.
 
 Choose sap_com_0092 as Scenario and copy the service key of your event mesh instance under Service Key(Segtion 1 step 4) . You need to create a Communication User. Click New and enter a User Name, Description and Propose Password. Copy the generated password and save it for later. Click Create.
 
@@ -21,7 +21,7 @@ Now you need to change the Arrangement Name to ZSAP_COM_0092_FREIGHTORDER_IN .
 ![Alt text](img/image-4.png)
 ![Alt text](img/image-5.png)
 
-## Communication Arrangement for event consumption model in the SAP BTP ABAP environment system
+## 5. Communication Arrangement for event consumption model in the SAP BTP ABAP environment system
 The connection between your BTP system and event mesh instance is done, now you need to create another communication arrangement with the scenario you already published in ADT:
 
 Navigate to **Communication Arrangement**, click **New**.
@@ -44,7 +44,7 @@ Under General click the Inbound Only option and click Save.
 ![Alt text](img/image-13.png)
 In communication arrangement click Save.
 ![Alt text](img/image-14.png)
-## Maintain Subscription
+## 6. Maintain Subscription
 Now you need to choose a subscription in your channel to specify in which queue you should get the event message.
 In the Fiori launchpad search for Enterprise Event Enablement - Configure Channel Binding App and open it.
 ![Alt text](img/image-15.png)
@@ -57,19 +57,18 @@ You need to check if the inbound topic from your event consumption model is adde
 ![Alt text](img/image-17.png)
 ![Alt text](img/image-18.png)
 
-```For more information about how to create a queue see this link```
 
-The subscription status must be **Acknowledged**.
+The subscription status should be **Acknowledged**.
 ![Alt text](img/image-19.png)
 
-## Create freight order in S/4HANA Cloud
+## 7. Create freight order in SAP S/4HANA Cloud
 ![Alt text](img/image-20.png)
 ![Alt text](img/image-21.png)
 ![Alt text](img/image-22.png)
 ![Alt text](img/image-24.png)
-## Check result in table in Eclipse ADT
+## 8. Check result in table in Eclipse ADT
 ![Alt text](img/image-25.png)
-right click
+Right click
 ![Alt text](img/image-27.png)
 
 

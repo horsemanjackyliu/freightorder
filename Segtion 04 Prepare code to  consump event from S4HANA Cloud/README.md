@@ -1,65 +1,67 @@
 
-## Step 1: Create Event Consumption Model
+## 1. Create an event consumption model in Eclipse
 
-Here you will create an Event Consumption Model with the .json file that you downloaded in last Segtion 2 step 3.
+Now we’re going to create an event consumption model using the .json file that you downloaded in last Segtion 2 step 3.
 
-### Open ADT and open your SAP BTP ABAP environment system based on guide.
+- 1. In ADT, open your SAP BTP, ABAP environment system based on guide.
 
-### Create a new ABAP Package if you have not one. Please be sure if your package name is with Z like
+- 2.	Create a new ABAP Package if you don’t have one. Make sure that your package name starts with the letter ‘Z’.  For example:
 
-Name: ZFREIGHT_ORDER_EVENT_PACKAGE
-Description: event consumption for freight order
+- Name: ZFREIGHT_ORDER_EVENT_PACKAGE
+- Description: event consumption for freight order
+
 ![Alt text](img/image.png)
 ![Alt text](img/image-1.png)
 ![Alt text](img/image-2.png)
 ![Alt text](img/image-3.png)
 ![Alt text](img/image-4.png)
 
-### Right-click your package and choose New > Other ABAP Repository Object > Business Services > Event Consumption Model and click Next to launch the creation wizard.
+- 3.  Right-click your package and choose New > Other ABAP Repository Object > Business Services > Event Consumption Model, and click Next to launch the creation wizard.
 ![Alt text](img/image-5.png)
 ![Alt text](img/image-6.png)
-Fill the fields and upload the .json file you saved before into the new event consumption ADT wizard. This will then automatically generate all that you need in this event consumption model, like the event handler custom code, authorization defaults values and inbound service.
 
-Name: will be created with the Prefix and Identifier
-Description: event consumption model for freight order
-Namespace/ Prefix/ Identifier : Z and FREIGHTORDERCREATEDEVENT
-Event specification File: .json file
-click Next.
+- 4. Fill in the fields and upload the .json file you saved previously into the new event consumption ADT wizard. This will then automatically generate everything you need for this event consumption model, such as the event handler custom code, authorization defaults values, and inbound service.
+
+- Name: Is created with the Prefix and Identifier 
+- Description: event consumption model for freight order
+- Namespace/ Prefix/ Identifier : Z and FREIGHTORDERCREATEDEVENT
+- Event specification File: the .json file that you created
+- 5. click Next.
 ![Alt text](img/image-7.png)
 ![Alt text](img/image-8.png)
 ![Alt text](img/image-9.png)
 ![Alt text](img/image-10.png)
 ![Alt text](img/image-11.png)
 
-### Step 2 Create Communication Scenario for Event Consumption Model
-In this section you will create a communication scenario for the previously generated Event Consumption Model and you will get explanation of additional steps needed to use it later for the event consumption. Eventually, this communication scenario is used in the productive system to create a communication arrangement with the previously generated Event Consumption Model. Moreover, a sap_com_0092 communication arrangement will be required in the productive system which denotes the connection from the productive system to the event mesh instance in the SAP BTP ABAP environment system. These two scenarios combined will then enable the event consumption with the generated Event Consumption Model.
+### 2. Create a communication scenario for the event consumption model
+Now we will create a communication scenario for the Event Consumption Model that we just generated, and we will show you how to use it later for event consumption. This communication scenario will be used in the productive system to create a communication arrangement with the generated event consumption model. You will need an sap_com_0092 communication arrangement in the productive system for the connection from the productive system to the Event Mesh instance in the SAP BTP, ABAP environment system. These two scenarios combined will then enable the event consumption with the generated Event Consumption Model.
 
-Right-click your package and choose New > Other ABAP Repository Object > Cloud Communication Management > Communication Scenario and click Next.
+Right-click your package and choose New > Other ABAP Repository Object > Cloud Communication Management > Communication Scenario. Click **Next**.
 
 ![Alt text](img/image-12.png)
 ![Alt text](img/image-13.png)
 Enter the following name and description:
 
-Name:Z_EVENT_SCENARIO_FREIGHT_ORDER
-Description: event consupmtion scenario for freight order
-and click Next.
+- Name:Z_EVENT_SCENARIO_FREIGHT_ORDER
+- Description: event consupmtion scenario for freight order
+Click **Next**.
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-15.png)
 ![Alt text](img/image-16.png)
 ![Alt text](img/image-17.png)
 ![Alt text](img/image-18.png)
-Save the communication scenario by pressing Ctrl + S
+Press Ctrl+S to save the communication scenario.
 ![Alt text](img/image-19.png)
 
-### Step 3 Create database table for handler method
+### 3. Create database table for handler method
 Right-click your package and choose New > Other ABAP Repository Object > Database Table and click Next
 
 ![Alt text](img/image-20.png)
 ![Alt text](img/image-21.png)
 Enter the following name and description:
 
-Name:ZT_FREIGHTORDER
-Description: Database table for freight order
+- Name:ZT_FREIGHTORDER
+- Description: Database table for freight order
 ![Alt text](img/image-22.png)
 ![Alt text](img/image-23.png)
 ![Alt text](img/image-24.png)
@@ -104,7 +106,7 @@ define table ztb_freightorder {
 ```
 Save and activate the table.
 
-### Step 4 Define handle event methods
+### 4. Define handle event methods
 
 Navigate to Business Service > Event Consumption models > ZFREIGHTORDERCREATEDEVENT           0001 > Classes > ZCL_FREIGHTORDERCREATEDEVENT which is generated (or you can navigate to the Source Code Library > ZCL_FREIGHTORDERCREATEDEVENT). Here you can see the create Method.
 ![Alt text](img/image-25.png)
@@ -131,7 +133,7 @@ You need to adjust the code as the following in your method. pLease don't just c
 
 **Please save and activate the class**
 
-### Step 5 Acctivate the  Define handle event methods
+### 5. Acctivate the  Define handle event methods
 
 Please right click the communication scenario and select activate to activate the communication scenario.
 

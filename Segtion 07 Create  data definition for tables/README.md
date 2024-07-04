@@ -1,5 +1,5 @@
 
-## Step 1: Create data definition for table ztb_freightorder.
+## 1. Create data definition for table ztb_freightorder.
 ![Alt text](image.png)
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
@@ -44,13 +44,13 @@ define root view entity ZR_FREIGHTORDER as select from ZTB_FREIGHTORDER
 
 Push ***Command + S*** in Mac and activate it .
 
-## Step 2: Create data definition for table ztb_forder_items.
+## 2. Create data definition for table ztb_forder_items.
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
 ![Alt text](image-8.png)
 
-Adjust the code as the following.
+Adjust the code like the following.
 
 ```
 @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -114,7 +114,7 @@ define view entity ZR_FORDER_ITEMS
 
 Push ***Command + S*** in Mac and activate it .
 
-## Step 3: Update data definition ZR_FREIGHTORDER and re-activate it .
+## 3. Update data definition ZR_FREIGHTORDER and re-activate it .
 
 ```
 @AccessControl.authorizationCheck: #NOT_REQUIRED
@@ -155,7 +155,7 @@ composition [0..*] of ZR_FORDER_ITEMS as _ITEMS
 Push ***Command + S*** in Mac and activate it .
 
 
-## Step 4: Create projection view for ZR_FREIGHTORDER.
+## 4. Create projection view for ZR_FREIGHTORDER.
 ![Alt text](image-9.png)
 ![Alt text](image-10.png)
 ![Alt text](image-11.png)
@@ -204,14 +204,14 @@ define root view entity ZC_FREIGHTORDER as projection on ZR_FREIGHTORDER
 
 Push ***Command + S*** in Mac and activate it .
 
-## Step 5: Create projection view for ZR_FORDER_ITEMS.
+## 5. Create projection view for ZR_FORDER_ITEMS.
 ![Alt text](image-14.png)
 ![Alt text](image-15.png)
 ![Alt text](image-16.png)
 ![Alt text](image-17.png)
 ![Alt text](image-18.png)
 
-Adjust the code as the following:
+Adjust the code as like following:
 
 ```ABAP
 @EndUserText.label: 'Projection view for ZR_FORDER_ITEMS'
@@ -283,7 +283,7 @@ Push ***Command + S*** in Mac and activate it .
 
 ![Alt text](image-27.png)
 
-## Step 6: Create anotation for projection view ZC_FREIGHTORDER.
+## 6. Create anotation for projection view ZC_FREIGHTORDER.
 
 ![Alt text](image-19.png)
 
@@ -508,7 +508,7 @@ annotate view ZC_FREIGHTORDER with
 Push ***Command + S*** in Mac and activate it .
 ![Alt text](image-28.png)
 
-## Step 7: Create anotation for projection view ZC_FORDER_ITEMS.
+## 7. Create anotation for projection view ZC_FORDER_ITEMS.
 
 ![Alt text](image-23.png)
 Name: ZC_FORDER_ITEMS

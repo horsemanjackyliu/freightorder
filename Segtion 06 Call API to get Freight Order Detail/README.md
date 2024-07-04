@@ -1,9 +1,9 @@
 
-## Step 1 Create communication arrangement in S/4HANA Cloud to expose Freight Order API .
+## 1. Create communication arrangement in SAP S/4HANA Cloud to expose Freight Order API .
 
 **prerequisites**:
 
-You user account in s/4HANA Cloud has been assigned with user role **BR_ADMINISTRATOR** or **BR_CONF_EXPERT_BUS_NET_INT**
+You user account in SAP SAP S/4HANA Cloud has been assigned with user role **BR_ADMINISTRATOR** or **BR_CONF_EXPERT_BUS_NET_INT**
 
 
 ![Alt text](img/image.png)
@@ -17,9 +17,10 @@ You user account in s/4HANA Cloud has been assigned with user role **BR_ADMINIST
 ![Alt text](img/image-9.png)
 ![Alt text](img/image-10.png)
 ![Alt text](img/image-12.png)
+
 As a result, we get the Freight order api URL address and metadata , user name and password .
 
-## Step 2 Create consumption model in Eclipse ADT with metadata file from previouse step.
+## 2. Create consumption model in Eclipse ADT with metadata file from previouse step.
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-15.png)
 ![Alt text](img/image-16.png)
@@ -29,7 +30,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-20.png)
 ![Alt text](img/image-22.png)
 
-## Step 3 Create outbound service model and communication scenario in Eclipse ADT .
+## 3. Create outbound service model and communication scenario in Eclipse ADT .
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-23.png)
 ![Alt text](img/image-24.png)
@@ -37,7 +38,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-26.png)
 ![Alt text](img/image-27.png)
 
-## Step 4 Create communication scenario in Eclipse ADT .
+## 4. Create communication scenario in Eclipse ADT .
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-28.png)
 ![Alt text](img/image-29.png)
@@ -47,7 +48,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-33.png)
 ![Alt text](img/image-34.png)
 
-## Step 5 Create communication arrangement in BTP ABAP environment.
+## 5. Create communication arrangement in SAP BTP ABAP environment.
 ![Alt text](img/image-35.png)
 ![Alt text](img/image-36.png)
 ![Alt text](img/image-37.png)
@@ -62,7 +63,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-46.png)
 ![Alt text](img/image-47.png)
 
-## Step 6 Create freight order item table in Eclipse Adt .
+## 6. Create freight order item table in Eclipse Adt .
 
 ![Alt text](img/image-48.png)
 ![Alt text](img/image-49.png)
@@ -123,7 +124,7 @@ define table ztb_forder_items {
 Push ***command + s*** in Mac to save then ***acivate*** it .
 ![Alt text](img/image-51.png)
 
-## Step 7 Create freight order table in Eclipse Adt .
+## 7. Create freight order table in Eclipse Adt .
 
 ![Alt text](img/image-48.png)
 ![alt text](image.png)
@@ -171,7 +172,7 @@ Push ***command + s*** in Mac to save then ***acivate*** it .
 ![alt text](image-2.png)
 
 
-## Step 8 Adjust event handler to call service consumption model in Eclipse Adt .Please don't copy and paste the code .
+## 8. Adjust event handler to call service consumption model in Eclipse Adt. Please don't just copy and paste the code.
 
 Before adjust
 ``` ABAP
@@ -370,9 +371,9 @@ ENDCLASS.
 Push ***command + s*** in Mac to save then ***acivate*** it .
 
 
-## Step 9 Create freight order in S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
+## 9. Create freight order in SAP S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
 
-### Create freight order in S/4HANA Cloud
+### Create freight order in SAP S/4HANA Cloud
 ![Alt text](img/image-20%5B1%5D.png)
 ![Alt text](img/image-21.png)
 ![Alt text](img/image-22%5B1%5D.png)
