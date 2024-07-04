@@ -136,6 +136,7 @@ authorization dependent by _FREIGHTORDER
 ![alt text](image-10.png)
 ![alt text](image-11.png)
 ![alt text](image-12.png)
+
 **Before change, the code likes the following:**
 
 ```
@@ -531,4 +532,5 @@ define behavior for ZC_FORDER_ITEMS
 use association _FREIGHTORDER;
 }
 ```
+
 Save and activate the behavior definition for ZC_FREIGHTORDER.

@@ -1,5 +1,6 @@
 ## Prerequisites:
 - Please make sure you have the roles in the following screenshots to finish the whole mission.
+
 ![alt text](image-27.png)
 ![alt text](image-23.png)
 ![alt text](image-26.png)
@@ -9,7 +10,7 @@
 
 ## 1.  Create a service instance of SAP Document Management, Integration Option. For more information see - - [Initial Setup for Document Management Service. Integration Option](https://help.sap.com/viewer/f6e70dd4bffa4b65965b43feed4c9429/Cloud/en-US/bc0f1ec7d5374b968e0b0de6db470c94.html) on SAP Help Portal.
 
-This will give you the service instance and service key in the SAP BTP subaccount.
+This will give you the service instance and service key in the SAP SAP BTP sub-account.
 
 ![alt text](image.png)
 ![alt text](image-1.png)

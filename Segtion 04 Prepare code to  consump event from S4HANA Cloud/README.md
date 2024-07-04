@@ -17,6 +17,7 @@ Now we’re going to create an event consumption model using the .json file that
 ![Alt text](img/image-4.png)
 
 - 3.  Right-click your package and choose New > Other ABAP Repository Object > Business Services > Event Consumption Model, and click Next to launch the creation wizard.
+
 ![Alt text](img/image-5.png)
 ![Alt text](img/image-6.png)
 
@@ -27,6 +28,7 @@ Now we’re going to create an event consumption model using the .json file that
 - Namespace/ Prefix/ Identifier : Z and FREIGHTORDERCREATEDEVENT
 - Event specification File: the .json file that you created
 - 5. click Next.
+
 ![Alt text](img/image-7.png)
 ![Alt text](img/image-8.png)
 ![Alt text](img/image-9.png)
@@ -34,38 +36,47 @@ Now we’re going to create an event consumption model using the .json file that
 ![Alt text](img/image-11.png)
 
 ### 2. Create a communication scenario for the event consumption model
+
 Now we will create a communication scenario for the Event Consumption Model that we just generated, and we will show you how to use it later for event consumption. This communication scenario will be used in the productive system to create a communication arrangement with the generated event consumption model. You will need an sap_com_0092 communication arrangement in the productive system for the connection from the productive system to the Event Mesh instance in the SAP BTP, ABAP environment system. These two scenarios combined will then enable the event consumption with the generated Event Consumption Model.
 
 Right-click your package and choose New > Other ABAP Repository Object > Cloud Communication Management > Communication Scenario. Click **Next**.
 
 ![Alt text](img/image-12.png)
 ![Alt text](img/image-13.png)
+
 Enter the following name and description:
 
 - Name:Z_EVENT_SCENARIO_FREIGHT_ORDER
 - Description: event consupmtion scenario for freight order
 Click **Next**.
+
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-15.png)
 ![Alt text](img/image-16.png)
 ![Alt text](img/image-17.png)
 ![Alt text](img/image-18.png)
+
 Press Ctrl+S to save the communication scenario.
+
 ![Alt text](img/image-19.png)
 
 ### 3. Create database table for handler method
-Right-click your package and choose New > Other ABAP Repository Object > Database Table and click Next
+Right-click your package and choose New > Other ABAP Repository Object > Database Table and click **Next** .
 
 ![Alt text](img/image-20.png)
 ![Alt text](img/image-21.png)
+
 Enter the following name and description:
 
-- Name:ZT_FREIGHTORDER
+- Name: ZT_FREIGHTORDER
 - Description: Database table for freight order
+
 ![Alt text](img/image-22.png)
 ![Alt text](img/image-23.png)
 ![Alt text](img/image-24.png)
-Define the table with this code
+
+Define the table with the following code
+
 ``` 
  @EndUserText.label : 'Database table for freight order'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
@@ -104,19 +115,24 @@ define table ztb_freightorder {
 
 }
 ```
+
 Save and activate the table.
 
 ### 4. Define handle event methods
 
+
 Navigate to Business Service > Event Consumption models > ZFREIGHTORDERCREATEDEVENT           0001 > Classes > ZCL_FREIGHTORDERCREATEDEVENT which is generated (or you can navigate to the Source Code Library > ZCL_FREIGHTORDERCREATEDEVENT). Here you can see the create Method.
+
 ![Alt text](img/image-25.png)
 
 Remove comment from these lines:
+
 ```  
 DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_BusinessPartner_Created_v1.      
   ls_business_data = io_event->get_business_data( ).
 ```
 You need to adjust the code as the following in your method. pLease don't just copy and paste.
+
 ```
    DATA ls_business_data TYPE STRUCTURE FOR HIERARCHY Z_FreightOrder_Created_v1_568B. //this line maybe deifferent .
    data wa type ztb_freightorder .

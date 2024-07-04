@@ -22,8 +22,10 @@
 
     Add another topic:
     sap/s4/beh/FreightOrder/Created/v1
+    
 ![Alt text](./img/image-26.png)
 ![Alt text](./img/image-27.png)
+
 com/sap/spaworkshop/ce/sap/s4/beh/FreightOrder/Created/v1
 
 ### 3. Save the event metadata to a JSON file 

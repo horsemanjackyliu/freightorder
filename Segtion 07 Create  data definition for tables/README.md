@@ -1,5 +1,6 @@
 
 ## 1. Create data definition for table ztb_freightorder.
+
 ![Alt text](image.png)
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
@@ -45,6 +46,7 @@ define root view entity ZR_FREIGHTORDER as select from ZTB_FREIGHTORDER
 Push ***Command + S*** in Mac and activate it .
 
 ## 2. Create data definition for table ztb_forder_items.
+
 ![Alt text](image-5.png)
 ![Alt text](image-6.png)
 ![Alt text](image-7.png)
@@ -156,6 +158,7 @@ Push ***Command + S*** in Mac and activate it .
 
 
 ## 4. Create projection view for ZR_FREIGHTORDER.
+
 ![Alt text](image-9.png)
 ![Alt text](image-10.png)
 ![Alt text](image-11.png)
@@ -205,6 +208,7 @@ define root view entity ZC_FREIGHTORDER as projection on ZR_FREIGHTORDER
 Push ***Command + S*** in Mac and activate it .
 
 ## 5. Create projection view for ZR_FORDER_ITEMS.
+
 ![Alt text](image-14.png)
 ![Alt text](image-15.png)
 ![Alt text](image-16.png)
@@ -289,6 +293,7 @@ Push ***Command + S*** in Mac and activate it .
 
 Name:ZC_FREIGHTORDER
 Description: Anotation for projection view ZC_FREIGHTORDER
+
 ![Alt text](image-20.png)
 ![Alt text](image-21.png)
 ![Alt text](image-22.png)
@@ -505,7 +510,9 @@ annotate view ZC_FREIGHTORDER with
 
 }
 ```
+
 Push ***Command + S*** in Mac and activate it .
+
 ![Alt text](image-28.png)
 
 ## 7. Create anotation for projection view ZC_FORDER_ITEMS.
@@ -810,6 +817,8 @@ annotate view ZC_FORDER_ITEMS with
 }
 ```
 Push ***Command + S*** in Mac and activate it .
+
+
 ![Alt text](image-29.png)
 
 

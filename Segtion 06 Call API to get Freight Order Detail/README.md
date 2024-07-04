@@ -21,6 +21,7 @@ You user account in SAP SAP S/4HANA Cloud has been assigned with user role **BR_
 As a result, we get the Freight order api URL address and metadata , user name and password .
 
 ## 2. Create consumption model in Eclipse ADT with metadata file from previouse step.
+
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-15.png)
 ![Alt text](img/image-16.png)
@@ -31,6 +32,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-22.png)
 
 ## 3. Create outbound service model and communication scenario in Eclipse ADT .
+
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-23.png)
 ![Alt text](img/image-24.png)
@@ -39,6 +41,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-27.png)
 
 ## 4. Create communication scenario in Eclipse ADT .
+
 ![Alt text](img/image-14.png)
 ![Alt text](img/image-28.png)
 ![Alt text](img/image-29.png)
@@ -49,6 +52,7 @@ As a result, we get the Freight order api URL address and metadata , user name a
 ![Alt text](img/image-34.png)
 
 ## 5. Create communication arrangement in SAP BTP ABAP environment.
+
 ![Alt text](img/image-35.png)
 ![Alt text](img/image-36.png)
 ![Alt text](img/image-37.png)
@@ -168,7 +172,9 @@ define table ztb_freightorder {
 
 }
 ```
+
 Push ***command + s*** in Mac to save then ***acivate*** it .
+
 ![alt text](image-2.png)
 
 
@@ -374,14 +380,19 @@ Push ***command + s*** in Mac to save then ***acivate*** it .
 ## 9. Create freight order in SAP S/4HANA Cloud and check the Freight order and freight order item table in Eclipse ADT .
 
 ### Create freight order in SAP S/4HANA Cloud
+
 ![Alt text](img/image-20%5B1%5D.png)
 ![Alt text](img/image-21.png)
 ![Alt text](img/image-22%5B1%5D.png)
 ![Alt text](img/image-23%5B1%5D.png)
 ![Alt text](img/image-52.png)
+
 ### Check result in table in Eclipse ADT
+
 ![Alt text](img/image-25%5B1%5D.png)
-right click
+
+Right click
+
 ![Alt text](img/image-26%5B1%5D.png)
 ![Alt text](img/image-53.png)
 ![Alt text](img/image-54.png)
