@@ -137,7 +137,7 @@ authorization dependent by _FREIGHTORDER
 ![alt text](image-11.png)
 ![alt text](image-12.png)
 
-**Before change, the code likes the following:**
+**Before adjustment, the code is like the following:**
 
 ```
 CLASS lhc_zr_forder_items DEFINITION INHERITING FROM cl_abap_behavior_handler.
@@ -208,7 +208,7 @@ CLASS lhc_ZR_FREIGHTORDER IMPLEMENTATION.
 ENDCLASS.
 ```
 
-**Adjust the code likes the following:**
+**After adjustment,the code is like the following:**
 
 ```
 CLASS lhc_zr_forder_items DEFINITION INHERITING FROM cl_abap_behavior_handler.
